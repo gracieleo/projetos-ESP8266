@@ -13,12 +13,12 @@ char TENSAO[10];
 char POTENCIA[10];
 
 IPAddress server_addr(185, 42, 117, 115);  // O IP DO SERVIDOR DA CLEVER CLOUD
-char user[] = "ue2qqhghuh1yfa2y";          // Usuario MySQL
-char password[] = "9L3PdKXc1LMDQON0Xelc";  // Senha MySQL  
-char ssid[] = "MARQUES";         //  Nome de rede Wifi   
-char pass[] = "familia2019";     //  Senha Wi-Fi 
+char user[] = "xx";          // Usuario MySQL
+char password[] = "xxx";  // Senha MySQL  
+char ssid[] = "xxx";         //  Nome de rede Wifi   
+char pass[] = "xxx";     //  Senha Wi-Fi 
 
-char INSERT_SQL[] = "INSERT INTO bkulbg7qoqzidjrlyyay.ENERGIA (EQUIPAMENTO, CORRENTE, TENSAO, POTENCIA) VALUES ('%s', %s, %s, %s)";
+char INSERT_SQL[] = "INSERT INTO xxxxxx.ENERGIA (EQUIPAMENTO, CORRENTE, TENSAO, POTENCIA) VALUES ('%s', %s, %s, %s)";
 
 WiFiClient client;                 // Use this for WiFi instead of EthernetClient
 MySQL_Connection conn(&client);
