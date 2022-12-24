@@ -1,3 +1,5 @@
+/* Verificar nomes das redes WiFi */
+
 #include "ESP8266WiFi.h"
 
 void setup() {

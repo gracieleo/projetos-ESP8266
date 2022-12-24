@@ -1,30 +1,29 @@
-
-#include <ESP8266WiFi.h>           // Use this for WiFi instead of Ethernet.h
+#include <ESP8266WiFi.h>           
 #include <MySQL_Connection.h>
 #include <MySQL_Cursor.h>
 
-IPAddress server_addr(185,42,117,115);  // IP of the MySQL *server* here
-char user[] = "XXXXX";              // MySQL user login username
-char password[] = "XXXXXX";        // MySQL user login password
+IPAddress server_addr(185,42,117,115);  //IP of the MySQL *server* here
+char user[] = "XXXXX";              	// MySQL user login username
+char password[] = "XXXXXX";        		// MySQL user login password
 
 
-// Sample query
-char INSERT_SQL[] = "INSERT INTO bmtdinpbnq3minev54hn.hello (message) VALUES ('Hello, Arduino!')";
+//query
+char INSERT_SQL[] = "INSERT INTO bancodedadosnome.tabela (colunanome) VALUES ('Hello, Arduino!')";
 
-// WiFi card example
+// WiFi
 char ssid[] = "XXXXXXX";         // your SSID
-char pass[] = "XXXXXX";     // your SSID Password
+char pass[] = "XXXXXX";     	// your SSID Password
 
-WiFiClient client;                 // Use this for WiFi instead of EthernetClient
+WiFiClient client;                
 MySQL_Connection conn(&client);
 MySQL_Cursor* cursor;
 
 void setup()
 {
   Serial.begin(115200);
-  while (!Serial); // wait for serial port to connect. Needed for Leonardo only
+  while (!Serial); 
 
-  // Begin WiFi section
+  //Begin WiFi section
   Serial.printf("\nConnecting to %s", ssid);
   WiFi.begin(ssid, pass);
   while (WiFi.status() != WL_CONNECTED) {

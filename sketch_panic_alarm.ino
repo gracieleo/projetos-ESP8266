@@ -4,7 +4,7 @@
 #include <ThingerESP8266.h>    
 
 
-ThingerESP8266 thing("xxxxx", "xxxx", "xxxxx");  // thinger.io( username,device name,device credentials )
+ThingerESP8266 thing("xxxxx", "xxxx", "xxxxx");  // thinger.io( username,device name,device credentials)
 int pushPin = 14;                               //the digital pin to the PIR sensor's output
 int ledPin = 4;
 int val = 0;                                    //variable for reading pin status
